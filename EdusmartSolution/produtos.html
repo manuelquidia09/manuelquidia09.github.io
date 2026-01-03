@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Produtos - Edusmart Solution</title>
+<link rel="stylesheet" href="style.css">
+<script src="carrinho.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="imagens/logo.png" alt="Edusmart Logo"></a>
+    </div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="carrinho.html">Carrinho 🛒</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+</header>
+
+<section class="produtos" style="margin-top:90px; padding:50px 20px; text-align:center;">
+    <h2>Todos os Produtos</h2>
+    <div class="lista-produtos" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:25px; justify-items:center;">
+        
+        <div class="produto">
+            <img src="imagens/smartphone.png" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>Preço: 250$</p>
+            <button onclick="adicionarCarrinho('Smartphone', 250, 'imagens/smartphone.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/notebook.png" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>Preço: 800$</p>
+            <button onclick="adicionarCarrinho('Notebook', 800, 'imagens/notebook.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/fones.png" alt="Fones de Ouvido">
+            <h3>Fones de Ouvido</h3>
+            <p>Preço: 50$</p>
+            <button onclick="adicionarCarrinho('Fones de Ouvido', 50, 'imagens/fones.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/teclado.png" alt="Teclado">
+            <h3>Teclado</h3>
+            <p>Preço: 30$</p>
+            <button onclick="adicionarCarrinho('Teclado', 30, 'imagens/teclado.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/mouse.png" alt="Mouse">
+            <h3>Mouse</h3>
+            <p>Preço: 20$</p>
+            <button onclick="adicionarCarrinho('Mouse', 20, 'imagens/mouse.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/carregador.png" alt="Carregador">
+            <h3>Carregador</h3>
+            <p>Preço: 15$</p>
+            <button onclick="adicionarCarrinho('Carregador', 15, 'imagens/carregador.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/tablet.png" alt="Tablet">
+            <h3>Tablet</h3>
+            <p>Preço: 200$</p>
+            <button onclick="adicionarCarrinho('Tablet', 200, 'imagens/tablet.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/smartwatch.png" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>Preço: 120$</p>
+            <button onclick="adicionarCarrinho('Smartwatch', 120, 'imagens/smartwatch.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/headset.png" alt="Headset">
+            <h3>Headset</h3>
+            <p>Preço: 60$</p>
+            <button onclick="adicionarCarrinho('Headset', 60, 'imagens/headset.png')">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/caixa.png" alt="Caixa de Som">
+            <h3>Caixa de Som</h3>
+            <p>Preço: 90$</p>
+            <button onclick="adicionarCarrinho('Caixa de Som', 90, 'imagens/caixa.png')">Adicionar</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Edusmart Solution - Camama</p>
+    <div class="redes-sociais">
+        <a href="https://www.facebook.com/seu_perfil" target="_blank">Facebook</a> |
+        <a href="https://wa.me/954133396" target="_blank">WhatsApp</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 400px;
+    background: linear-gradient(135deg, #ffd600, #00bfff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ff6b00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+/* ===== PRODUTOS ===== */
+.produtos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+.produto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produto button:hover {
+    background-color: #c43f3f;
+}
+
+/* ===== CARRINHO ===== */
+.carrinho-container {
+    max-width: 800px;
+    margin: 120px auto 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.carrinho-container h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.carrinho-lista {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrinho-lista th, .carrinho-lista td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.carrinho-lista img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ===== LOGIN / CADASTRO ===== */
+.login-container {
+    max-width: 400px;
+    margin: 120px auto 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #c43f3f;
+}
+
+.login-container a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+footer .redes-sociais a {
+    color: white;
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .redes-sociais a:hover {
+    color: #ffd700;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .lista-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
